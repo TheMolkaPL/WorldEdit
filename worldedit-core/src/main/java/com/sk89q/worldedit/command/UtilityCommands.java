@@ -553,8 +553,7 @@ public class UtilityCommands {
                 result = expression.evaluate();
             }
 
-            actor.print(input);
-            actor.print("= " + result);
+            actor.print(input + "= " + result);
         } catch (EvaluationException e) {
             actor.printError(String.format(
                     "'%s' could not be evaluated (error: %s)", input, e.getMessage()));
